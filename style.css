@@ -54,3 +54,37 @@ a:hover{
     color:orange;
     
 }
+
+.fade{
+    
+    opacity: 0;
+    
+}
+
+
+#container{
+    
+   margin: 5% 10% 2% 10%;
+ 
+  
+}
+
+#homecontent{
+    
+    transition: all 0.5s;
+     position:absolute;
+}
+
+#aboutcontent{
+    
+    transition: all 0.5s;
+       position:absolute;
+}
+
+#contactcontent{
+    
+    transition: all 0.5s;
+      position:absolute;
+}
+
+ 
