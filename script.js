@@ -6,13 +6,17 @@ var homecontent = document.getElementById("homecontent");
 var aboutcontent = document.getElementById("aboutcontent");
 var contactcontent = document.getElementById("contactcontent");
 
- hideContents();
-homecontent.style.display = "block";
-
+    addFade();
+    goneContents();
+    removeClass();
+    home.classList.add("active");
+    homecontent.style.display = "block";
+    homecontent.classList.remove("fade");
+ 
 home.addEventListener("click",function(){
     
     addFade();
-    hideContents();
+    goneContents();
     removeClass();
     home.classList.add("active");
     homecontent.style.display = "block";
@@ -22,7 +26,7 @@ home.addEventListener("click",function(){
 
 title.addEventListener("click",function(){
     addFade();
-     hideContents();
+    goneContents();
     removeClass();
     home.classList.add("active");
     homecontent.style.display = "block";
@@ -75,5 +79,13 @@ function addFade(){
       contactcontent.classList.add("fade")
     aboutcontent.classList.add("fade")
     homecontent.classList.add("fade")
+    
+}
+
+function goneContents(){
+    
+     contactcontent.style.display = "none";
+    aboutcontent.style.display = "none";
+    homecontent.style.display = "none";
     
 }
