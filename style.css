@@ -1,0 +1,49 @@
+body{
+    
+    font-family: "Montserrat";
+    background-color: #232323;
+    color:#AAAAAA;
+    margin: 0;
+}
+
+#logo{
+    
+    font-size: 180%;
+    text-transform: uppercase;
+    padding: 2% 0% 2% 0%;
+}
+
+span{
+    
+    font-weight: 800;
+    
+}
+
+.sidebar{
+    
+    background-color: #424242;
+    padding-bottom: 2%;
+}
+
+a {
+    
+    padding-left: 3%;
+    color:#EEEEEE;
+    text-decoration: none;
+    transition: color 1.0s;
+}
+
+a:hover{
+    
+    
+    color:orange;
+    
+    
+}
+
+a:active{
+    
+    
+    color:orange;
+    
+}
