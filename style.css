@@ -139,9 +139,10 @@ img{
 
 label{
     
-margin: 3% 2% 3% 3%;
-    font-size: 26px;
+margin: 0% 0% 3% 87%;
+    font-size: 35px;
      opacity: 0;
+   
   visibility: hidden;
     
     
@@ -168,7 +169,7 @@ margin: 3% 2% 3% 3%;
         opacity: 0;
         visibility: hidden;
           height: 0;
-        height: 0;
+        height: 0em;
         transition: height 1s 0.3s, visibility 0.5s ,opacity 0.5s;
     }   
     
@@ -182,7 +183,7 @@ margin: 3% 2% 3% 3%;
     }
     #toggle:checked + .ham {
         
-         height: 100px;
+         height: 7em;
   visibility: visible;
          opacity: 1;
      
