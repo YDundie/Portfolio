@@ -127,11 +127,71 @@ img{
     
     height: 30%;
     width: 50%;
+    margin-bottom: 30px;
     
 }
 
 .iconsize{
     
     font-size: 32px;
+    
+}
+
+label{
+    
+margin: 3% 2% 3% 3%;
+    font-size: 26px;
+     opacity: 0;
+  visibility: hidden;
+    
+    
+}
+#toggle{
+    
+     opacity: 0;
+  visibility: hidden;
+    
+}
+@media only screen and (max-width:500px){
+    
+    label{
+    
+ 
+       visibility: visible;
+      opacity: 1;
+      cursor: pointer;
+    
+}
+    .ham{
+        
+        text-align: center;
+        opacity: 0;
+        visibility: hidden;
+          height: 0;
+        height: 0;
+        transition: height 1s 0.3s, visibility 0.5s ,opacity 0.5s;
+    }   
+    
+    .ham a{
+        
+       
+        border-bottom: 1px solid;
+        margin-bottom: 4%;
+        transition: opacity 0.5s;
+           display: block;
+    }
+    #toggle:checked + .ham {
+        
+         height: 100px;
+  visibility: visible;
+         opacity: 1;
+     
+ 
+    transition: height 1s, visibility 0.5s ,opacity 0.5s 0.7s;
+        
+    }
+    
+    
+    
     
 }

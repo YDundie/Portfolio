@@ -5,6 +5,7 @@ var title = document.getElementById("title");
 var homecontent = document.getElementById("homecontent");
 var aboutcontent = document.getElementById("aboutcontent");
 var contactcontent = document.getElementById("contactcontent");
+var body = document.querySelector("body");
 
     addFade();
     goneContents();
@@ -21,6 +22,7 @@ home.addEventListener("click",function(){
     home.classList.add("active");
     homecontent.style.display = "block";
     homecontent.classList.remove("fade");
+  
     
 })
 
@@ -41,6 +43,7 @@ about.addEventListener("click",function(){
     about.classList.add("active");
     aboutcontent.style.display = "block";
     aboutcontent.classList.remove("fade");
+ 
     
 })
 contact.addEventListener("click",function(){
