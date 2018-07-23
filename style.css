@@ -184,6 +184,18 @@ margin: 0% 0% 3% 87%;
         transition: opacity 0.5s;
            display: block;
     }
+    
+    .iconsize{
+    
+    font-size: 52px;
+    
+}
+    body{
+        
+        font-size: 150%;
+        
+    }
+    
     #toggle:checked + .ham {
         
          height: 9em;
@@ -195,7 +207,7 @@ margin: 0% 0% 3% 87%;
         
     }
     
-    
+ 
     
     
 }
