@@ -178,9 +178,9 @@ margin: 0% 0% 3% 87%;
     
     .ham a{
         
-       
+        margin: 0% 0% 6% 0%;
         border-bottom: 1px solid;
-        margin-bottom: 4%;
+     
         transition: opacity 0.5s;
            display: block;
     }
