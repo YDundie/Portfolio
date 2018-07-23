@@ -7,51 +7,50 @@ var aboutcontent = document.getElementById("aboutcontent");
 var contactcontent = document.getElementById("contactcontent");
 var body = document.querySelector("body");
 
-    addFade();
-    goneContents();
-    removeClass();
+    
+    callFunctions();
     home.classList.add("active");
-    homecontent.style.display = "block";
+    homecontent.style.zIndex = 100;
+    homecontent.style.visibility = "visible";
     homecontent.classList.remove("fade");
- 
+
 home.addEventListener("click",function(){
     
-    addFade();
-    goneContents();
-    removeClass();
+    callFunctions();
     home.classList.add("active");
-    homecontent.style.display = "block";
+    homecontent.style.zIndex = 100;
+    homecontent.style.visibility = "visible";
     homecontent.classList.remove("fade");
   
     
 })
 
 title.addEventListener("click",function(){
-    addFade();
-    goneContents();
-    removeClass();
+   
+    callFunctions();
     home.classList.add("active");
-    homecontent.style.display = "block";
+    homecontent.style.zIndex = 100;
+    homecontent.style.visibility = "visible";
     homecontent.classList.remove("fade");
     
 })
 
 about.addEventListener("click",function(){
-     addFade();
-     hideContents();
-    removeClass();
+   
+    callFunctions();
     about.classList.add("active");
-    aboutcontent.style.display = "block";
+    aboutcontent.style.zIndex = 100;
+    aboutcontent.style.visibility = "visible";
     aboutcontent.classList.remove("fade");
  
     
 })
 contact.addEventListener("click",function(){
-     addFade();
-     hideContents();
-    removeClass();
+
+    callFunctions();
     contact.classList.add("active");
-    contactcontent.style.display = "block";
+    contactcontent.style.zIndex = 100;
+    contactcontent.style.visibility = "visible";
     contactcontent.classList.remove("fade");
     
 })
@@ -71,9 +70,9 @@ function removeClass(){
 
 function hideContents(){
     
-    contactcontent.style.display = "inline";
-    aboutcontent.style.display = "inline";
-    homecontent.style.display = "inline";
+    contactcontent.style.zIndex = -100;
+    aboutcontent.style.zIndex = -100;
+       homecontent.style.zIndex = -100;
     
 }
 
@@ -87,8 +86,18 @@ function addFade(){
 
 function goneContents(){
     
-     contactcontent.style.display = "none";
-    aboutcontent.style.display = "none";
-    homecontent.style.display = "none";
+    contactcontent.style.visibility = "hidden";
+    aboutcontent.style.display = "hidden";
+    homecontent.style.display = "hidden";
+    
+}
+
+function callFunctions(){
+       
+    addFade();
+    hideContents()
+    removeClass();
+    goneContents();
+    
     
 }
